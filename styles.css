@@ -31,7 +31,9 @@
 .nav-links a {
     color: #fff; /* White text */
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.2rem;
+    font-weight: 700; /* Make the text bolder */
+    font-family: 'Arial', sans-serif; /* Use a clean, bold font */
     transition: color 0.3s;
 }
 
@@ -63,8 +65,13 @@
         text-align: center;
         background-color: #000;
         position: absolute;
-        top: 60px;
+        top: 90px;
         left: 0;
+        z-index: 1;
+    }
+
+    .nav-links a {
+        font-size: 1rem; /* Adjust for mobile screens */
     }
 
     .nav-links.show {
