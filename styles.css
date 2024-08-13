@@ -5,6 +5,17 @@
     box-sizing: border-box;
 }
 
+/* Styling for the company name next to the logo */
+.company-name {
+    font-size: 1.5rem; /* Adjust the font size */
+    font-weight: 700; /* Bold text */
+    color: #FFA500; /* Gold color */
+    margin-left: 15px; /* Space between the logo and the text */
+    font-family: 'Arial', sans-serif; /* Ensure consistency with the nav links */
+    display: inline-block; /* Ensure it's treated as an inline element */
+    align-self: center; /* Aligns the text to the center vertically */
+}
+
 /* Navbar styling */
 .navbar {
     background-color: #000; /* Black background */
@@ -16,8 +27,15 @@
 }
 
 /* Logo styling */
+.logo {
+    display: flex;
+    align-items: center; /* Align logo and text vertically */
+    text-decoration: none;
+}
+
+/* Logo styling */
 .logo img {
-    width: 50px;
+    width: 60px;
     height: auto;
 }
 
@@ -25,7 +43,7 @@
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 80px;
+    gap: 30px;
 }
 
 .nav-links a {
@@ -57,6 +75,26 @@
     background-color: #fff; /* White bars */
 }
 
+/* Adjust layout between desktop and mobile sizes */
+@media screen and (max-width: 900px) and (min-width: 769px) {
+    .navbar {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+    
+    .nav-links {
+        flex-direction: row; /* Keep links in a row */
+        justify-content: space-around; /* Space out the links */
+        width: 100%; /* Take up full width */
+        margin-top: 10px; /* Add some spacing */
+    }
+
+    .company-name {
+        font-size: 1.3rem; /* Slightly reduce the font size */
+        margin-left: 0; /* Remove margin */
+    }
+}
+
 /* Mobile Responsive */
 @media screen and (max-width: 768px) {
     .nav-links {
@@ -81,5 +119,9 @@
 
     .hamburger {
         display: flex;
+    }
+
+    .company-name {
+        display: none;
     }
 }
