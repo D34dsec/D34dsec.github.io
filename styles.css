@@ -77,21 +77,8 @@
 
 /* Adjust layout between desktop and mobile sizes */
 @media screen and (max-width: 900px) and (min-width: 769px) {
-    .navbar {
-        flex-direction: column; /* Stack items vertically */
-        align-items: flex-start; /* Align items to the start */
-    }
-    
-    .nav-links {
-        flex-direction: row; /* Keep links in a row */
-        justify-content: space-around; /* Space out the links */
-        width: 100%; /* Take up full width */
-        margin-top: 10px; /* Add some spacing */
-    }
-
     .company-name {
-        font-size: 1.3rem; /* Slightly reduce the font size */
-        margin-left: 0; /* Remove margin */
+        display: none;
     }
 }
 
