@@ -18,7 +18,7 @@
     font-weight: 700; /* Bold text */
     color: #FFA500; /* Gold color */
     margin-left: 15px; /* Space between the logo and the text */
-    font-family: 'Arial', sans-serif; /* Ensure consistency with the nav links */
+    font-family: 'Lato', sans-serif; /* Ensure consistency with the nav links */
     display: inline-block; /* Ensure it's treated as an inline element */
     align-self: center; /* Aligns the text to the center vertically */
 }
@@ -58,7 +58,7 @@
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: 700; /* Make the text bolder */
-    font-family: 'Arial', sans-serif; /* Use a clean, bold font */
+    font-family: 'Lato', sans-serif; /* Use a clean, bold font */
     transition: color 0.3s;
     padding: 10px 15px; /* Add padding around the links */
 }
@@ -126,14 +126,14 @@
     font-size: 3rem;
     margin-bottom: 10px;
     font-weight: 700; /* Make the text bolder */
-    font-family: 'Arial', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 .hero p {
     font-size: 1.5rem;
     margin-bottom: 30px;
     font-weight: 700; /* Make the text bolder */
-    font-family: 'Arial', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 .cta-button {
@@ -145,7 +145,7 @@
     border-radius: 5px;
     transition: background-color 0.3s;
     font-weight: 700; /* Make the text bolder */
-    font-family: 'Arial', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 .cta-button:hover {
@@ -178,6 +178,7 @@
     font-size: 2.5rem;
     margin-bottom: 40px;
     color: #333;
+    font-family: 'Lato', sans-serif;
 }
 
 /* Service card layout */
@@ -205,8 +206,17 @@
 
 .service-card h3 {
     margin-top: 20px;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     color: #555;
+    font-family: 'Lato', sans-serif;
+}
+
+.service-card p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #666;
+    margin-top: 10px;
+    font-family: 'Lato', sans-serif;
 }
 
 /* Hover effect */
@@ -230,6 +240,7 @@
 .back-to-top:hover {
     background-color: #ff8c00;
 }
+
 
 
  /* ____  __  __ _____ ____ ___    _      ____  _____ ____  ____   ___  _   _ ____ _____     _______ _   _ _____ ____ ____  
