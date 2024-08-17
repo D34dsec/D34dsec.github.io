@@ -204,6 +204,10 @@
     margin: 0 auto;
 }
 
+.service-carousel {
+    margin: 0 auto;
+}
+
 /* Heading for the services section */
 .services-section h2 {
     font-size: 2.5rem;
@@ -212,21 +216,15 @@
     font-family: 'Lato', sans-serif;
 }
 
-/* Service card layout */
-.service-cards {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 20px;
-}
 
 .service-card {
     background-color: #fff;
     padding: 20px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-    width: 30%;
+    text-align: center;
     border-radius: 8px;
+    height: auto; /* Allow height to adjust automatically */
+    overflow: visible; /* Ensure the text is not cut off */
 }
 
 .service-card img {
@@ -243,11 +241,19 @@
 }
 
 .service-card p {
+    white-space: normal; /* Allow text to wrap */
+    overflow: visible; /* Ensure no overflow is hidden */
+    text-overflow: initial; /* Remove ellipsis */
+    display: block;
     font-size: 1.1rem;
-    line-height: 1.6;
+    line-height: 1.6; /* Add more line spacing */
     color: #666;
     margin-top: 10px;
     font-family: 'Lato', sans-serif;
+}
+
+.slick-slide {
+    margin: 0 15px; /* Adjust spacing between slides */
 }
 
 /* Hover effect */
