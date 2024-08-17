@@ -122,10 +122,17 @@
     padding: 20px;
 }
 
-.hero h1, .hero p, .cta-button {
+.hero h1, .hero p, .cta-button, .hero-content i {
     opacity: 0;
     transform: translateY(30px);
     animation: fadeInUp 1.2s ease forwards;
+}
+
+.hero-content i {
+    font-size: 3rem; /* Adjust icon size */
+    color: #fff; /* White color for the icon */
+    margin-bottom: 40px; /* Add space below the icon */
+    animation-delay: 0.2s;
 }
 
 .hero h1 {
