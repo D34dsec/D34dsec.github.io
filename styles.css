@@ -5,6 +5,13 @@
     box-sizing: border-box;
 }
 
+/* _   _    ___     ______    _    ____  
+| \ | |  / \ \   / / __ )  / \  |  _ \ 
+|  \| | / _ \ \ / /|  _ \ / _ \ | |_) |
+| |\  |/ ___ \ V / | |_) / ___ \|  _ < 
+|_| \_/_/   \_\_/  |____/_/   \_\_| \_\
+                                       */
+
 /* Styling for the company name next to the logo */
 .company-name {
     font-size: 1.5rem; /* Adjust the font size */
@@ -60,6 +67,29 @@
 .nav-links a:focus {
     color: #FFA500; /* Gold on hover/focus */
 }
+
+/* Hamburger Menu for Mobile */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 2px;
+    background-color: #fff; /* White bars */
+}
+
+
+/* _   _ _____ ____   ___    ____  _____ ____ _____ ___ ___  _   _ 
+| | | | ____|  _ \ / _ \  / ___|| ____/ ___|_   _|_ _/ _ \| \ | |
+| |_| |  _| | |_) | | | | \___ \|  _|| |     | |  | | | | |  \| |
+|  _  | |___|  _ <| |_| |  ___) | |__| |___  | |  | | |_| | |\  |
+|_| |_|_____|_| \_\\___/  |____/|_____\____| |_| |___\___/|_| \_|
+                                                                  */
+
 
 /* Hero Section */
 .hero {
@@ -122,19 +152,93 @@
     background-color: #ff8c00; /* Darken the button on hover */
 }
 
-/* Hamburger Menu for Mobile */
-.hamburger {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-    gap: 5px;
+/* Container for the services section */
+.services-section {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+    text-align: center;
 }
 
-.hamburger span {
-    width: 25px;
-    height: 2px;
-    background-color: #fff; /* White bars */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
 }
+
+
+/* ____  _____ ______     _____ ____ _____ ____    ____  _____ ____ _____ ___ ___  _   _ 
+/ ___|| ____|  _ \ \   / /_ _/ ___| ____/ ___|  / ___|| ____/ ___|_   _|_ _/ _ \| \ | |
+\___ \|  _| | |_) \ \ / / | | |   |  _| \___ \  \___ \|  _|| |     | |  | | | | |  \| |
+ ___) | |___|  _ < \ V /  | | |___| |___ ___) |  ___) | |__| |___  | |  | | |_| | |\  |
+|____/|_____|_| \_\ \_/  |___\____|_____|____/  |____/|_____\____| |_| |___\___/|_| \_|
+                                                                                        */
+
+
+/* Heading for the services section */
+.services-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+/* Service card layout */
+.service-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.service-card {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    width: 30%;
+    border-radius: 8px;
+}
+
+.service-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.service-card h3 {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #555;
+}
+
+/* Hover effect */
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Back to Top Button */
+.back-to-top {
+    margin-top: 40px;
+    padding: 12px 25px;
+    background-color: #FFA500;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.back-to-top:hover {
+    background-color: #ff8c00;
+}
+
+
+ /* ____  __  __ _____ ____ ___    _      ____  _____ ____  ____   ___  _   _ ____ _____     _______ _   _ _____ ____ ____  
+   / __ \|  \/  | ____|  _ \_ _|  / \    |  _ \| ____/ ___||  _ \ / _ \| \ | / ___|_ _\ \   / / ____| \ | | ____/ ___/ ___| 
+  / / _` | |\/| |  _| | | | | |  / _ \   | |_) |  _| \___ \| |_) | | | |  \| \___ \| | \ \ / /|  _| |  \| |  _| \___ \___ \ 
+ | | (_| | |  | | |___| |_| | | / ___ \  |  _ <| |___ ___) |  __/| |_| | |\  |___) | |  \ V / | |___| |\  | |___ ___) |__) |
+  \ \__,_|_|  |_|_____|____/___/_/   \_\ |_| \_\_____|____/|_|    \___/|_| \_|____/___|  \_/  |_____|_| \_|_____|____/____/ 
+   \____/                                                                                                                   
+ */
 
 /* Adjust layout between desktop and mobile sizes */
 @media screen and (max-width: 900px) and (min-width: 769px) {
@@ -180,6 +284,20 @@
 
     .cta-button {
         padding: 10px 20px;
+    }
+
+    /* Services Section */
+    .service-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-card {
+        width: 90%;
+    }
+
+    .services-section h2 {
+        font-size: 2rem;
     }
 
 }
