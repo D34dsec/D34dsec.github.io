@@ -372,7 +372,28 @@
    \____/                                                                                                                   
  */
 
-/* Adjust layout between desktop and mobile sizes */
+
+ @media screen and (min-width: 1200px) {
+    .hero-content {
+        margin-top: -200px; /* Move content up by reducing margin */
+        padding: 20px;
+    }
+    
+    .hero h1 {
+        font-size: 5rem; /* Increase the font size for large screens */
+    }
+
+    .hero p {
+        font-size: 3rem; /* Increase font size for paragraph on large screens */
+    }
+
+    .cta-button {
+        font-size: 1.5rem;
+        padding: 15px 30px; /* Increase padding for a larger button */
+    }
+}
+
+ /* Adjust layout between desktop and mobile sizes */
 @media screen and (max-width: 900px) and (min-width: 769px) {
     .company-name {
         display: none;
