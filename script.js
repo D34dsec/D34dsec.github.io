@@ -36,6 +36,26 @@ $(document).ready(function(){
       ]
     });
   });
+
+  $(document).ready(function(){
+    $('.testimonials-carousel').slick({
+      slidesToShow: 2, // Number of testimonials to show at once
+      slidesToScroll: 1,
+      autoplay: true, // Auto-scroll the testimonials
+      autoplaySpeed: 5000, // Delay between slides
+      dots: true, // Add dots for navigation
+      arrows: false, // Disable arrows for cleaner look
+      responsive: [
+        {
+          breakpoint: 768, // Mobile view, only show 1 testimonial at a time
+          settings: {
+            slidesToShow: 1
+          }
+        }
+      ]
+    });
+  });
+  
   
   
   
