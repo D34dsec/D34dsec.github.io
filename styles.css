@@ -278,6 +278,115 @@
     background-color: #ff8c00;
 }
 
+/* 
+____                  _                 ____            _   _             
+/ ___|  ___ _ ____   _(_) ___ ___  ___  / ___|  ___  ___| |_(_) ___  _ __  
+\___ \ / _ \ '__\ \ / / |/ __/ _ \/ __| \___ \ / _ \/ __| __| |/ _ \| '_ \ 
+ ___) |  __/ |   \ V /| | (_|  __/\__ \  ___) |  __/ (__| |_| | (_) | | | |
+|____/ \___|_|    \_/ |_|\___\___||___/ |____/ \___|\___|\__|_|\___/|_| |_|
+                                                                            */
+                                                                            
+
+.about-section {
+    background-color: #f3f4f6; /* Light background color */
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 30px;
+    font-family: 'Lato', sans-serif;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    color: #666;
+    line-height: 1.8;
+    font-family: 'Lato', sans-serif;
+}
+
+.about-content h3 {
+    margin-top: 40px; /* Spacing before each heading */
+    font-size: 2rem;
+    color: #333;
+}
+
+.about-content p {
+    margin-top: 15px; /* Spacing after each paragraph */
+    font-size: 1.2rem;
+    color: #666;
+    line-height: 1.8;
+}
+
+.spacer {
+    margin-top: 40px; /* Create additional space between sections */
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px); /* Start slightly below its final position */
+    animation: fadeInUp 1s ease forwards;
+    animation-play-state: paused; /* Ensure animation only plays when triggered */
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); /* Start from 20px lower */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* End in its original position */
+    }
+}
+
+/* Staggered animation delays for each heading and paragraph */
+.about-content h3:nth-of-type(1) {
+    animation-delay: 0.1s;
+}
+
+.about-content p:nth-of-type(1) {
+    animation-delay: 0.2s;
+}
+
+.about-content h3:nth-of-type(2) {
+    animation-delay: 0.3s;
+}
+
+.about-content p:nth-of-type(2) {
+    animation-delay: 0.4s;
+}
+
+.about-content h3:nth-of-type(3) {
+    animation-delay: 0.5s;
+}
+
+.about-content p:nth-of-type(3) {
+    animation-delay: 0.6s;
+}
+
+.about-content h3:nth-of-type(4) {
+    animation-delay: 0.7s;
+}
+
+.about-content p:nth-of-type(4) {
+    animation-delay: 0.8s;
+}
+
+.about-content h3:nth-of-type(5) {
+    animation-delay: 0.9s;
+}
+
+.about-content p:nth-of-type(5) {
+    animation-delay: 1s;
+}
+
+
+
 
 /* _____         _   _                       _       _     
 |_   _|__  ___| |_(_)_ __ ___   ___  _ __ (_) __ _| |___ 
@@ -288,7 +397,7 @@
 
 
 .testimonials-section {
-    background-color: #f3f4f6; /* Light background color for contrast */
+    background-color: #f9f9f9; /* Light background color for contrast */
     padding: 60px 20px;
     text-align: center;
 }
@@ -394,14 +503,14 @@
 }
 
  /* Adjust layout between desktop and mobile sizes */
-@media screen and (max-width: 900px) and (min-width: 769px) {
+@media screen and (max-width: 984px) and (min-width: 795px) {
     .company-name {
         display: none;
     }
 }
 
 /* Mobile Responsive */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 794px) {
     .nav-links {
         display: none;
         flex-direction: column;

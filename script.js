@@ -5,6 +5,22 @@ hamburger.addEventListener('click', () => {
     navLinks.classList.toggle('show');
 });
 
+document.addEventListener("scroll", function() {
+  const elements = document.querySelectorAll('.fade-in');
+  const windowHeight = window.innerHeight;
+
+  elements.forEach((element) => {
+      const position = element.getBoundingClientRect().top;
+      
+      // Check if the element is in view and hasn't animated yet
+      if (position < windowHeight - 100 && !element.classList.contains('animated')) {
+        element.style.animationPlayState = "running"; // Start animation
+        element.classList.add('animated'); // Mark as animated
+    }
+  });
+});
+
+
 function scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
@@ -55,7 +71,7 @@ $(document).ready(function(){
       ]
     });
   });
-  
+
   
   
   
