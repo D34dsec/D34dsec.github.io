@@ -632,8 +632,9 @@ _____           _              ____            _   _
         font-size: 1rem; /* Adjust for mobile screens */
     }
 
-    .nav-links.show {
+    .nav-links.active {
         display: flex;
+        /* Styles for when the menu is open */
     }
 
     .hamburger {

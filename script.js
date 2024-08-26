@@ -1,9 +1,29 @@
-const hamburger = document.querySelector('.hamburger');
-const navLinks = document.querySelector('.nav-links');
+document.addEventListener("DOMContentLoaded", function() {
+  const hamburger = document.querySelector('.hamburger');
+  const navMenu = document.querySelector('.nav-links');
+  const navLinks = document.querySelectorAll('.nav-links li a');
+  const backToTopButton = document.querySelector('.back-to-top-button');
 
-hamburger.addEventListener('click', () => {
-    navLinks.classList.toggle('show');
+  // Toggle mobile menu
+  hamburger.addEventListener('click', function() {
+      navMenu.classList.toggle('active');
+  });
+
+  // Close menu when a nav link is clicked
+  navLinks.forEach(link => {
+      link.addEventListener('click', function() {
+          navMenu.classList.remove('active'); // Close the menu
+      });
+  });
+
+  // Close menu when back to top button is clicked
+  if (backToTopButton) {
+      backToTopButton.addEventListener('click', function() {
+          navMenu.classList.remove('active'); // Close the menu
+      });
+  }
 });
+
 
 document.addEventListener("scroll", function() {
   const elements = document.querySelectorAll('.fade-in');
