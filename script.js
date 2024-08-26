@@ -26,32 +26,39 @@ function scrollToTop() {
 }
 
 $(document).ready(function(){
-    $('.service-carousel').slick({
-      slidesToShow: 3, // Show 3 cards at once on large screens
-      slidesToScroll: 1,
-      autoplay: true,
-      autoplaySpeed: 5000,
-      dots: true,
-      arrows: true,
-      adaptiveHeight: true, // Enable adaptive height
-      responsive: [
-        {
-          breakpoint: 1024, // Show 2 cards on medium screens
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1
-          }
-        },
-        {
-          breakpoint: 768, // Show 1 card on small screens
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
+  $('.service-carousel').slick({
+    slidesToShow: 3, // Number of testimonials to show at once
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    dots: true,
+    arrows: true,
+    responsive: [
+      {
+        breakpoint: 1024, // Adjust for mid-sized screens (tablets)
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
         }
-      ]
-    });
+      },
+      {
+        breakpoint: 768, // For mobile screens
+        settings: {
+          slidesToShow: 1, // Show 1 slide on small screens
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 480, // Smaller mobile screens
+        settings: {
+          slidesToShow: 1, // Show 1 slide on small screens
+          slidesToScroll: 1
+        }
+      }
+    ]
   });
+});
+
 
   $(document).ready(function(){
     $('.testimonials-carousel').slick({
