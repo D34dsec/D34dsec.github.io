@@ -475,7 +475,107 @@ ____                  _                 ____            _   _
     opacity: 0.3;
 }
 
+/* 
+_____           _              ____            _   _             
+|  ___|__   ___ | |_ ___ _ __  / ___|  ___  ___| |_(_) ___  _ __  
+| |_ / _ \ / _ \| __/ _ \ '__| \___ \ / _ \/ __| __| |/ _ \| '_ \ 
+|  _| (_) | (_) | ||  __/ |     ___) |  __/ (__| |_| | (_) | | | |
+|_|  \___/ \___/ \__\___|_|    |____/ \___|\___|\__|_|\___/|_| |_|
+                                                                   */
 
+
+.site-footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+    font-family: 'Lato', sans-serif;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px;
+}
+
+.footer-column h4 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #FFA500; /* Gold color matching the theme */
+}
+
+.footer-column p,
+.footer-column ul {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    line-height: 1.8;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+.accreditation-logo {
+    width: 120px; /* Adjust size as needed */
+    margin-top: 10px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #555;
+    padding-top: 20px;
+    font-size: 0.9rem;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+.footer-social-links {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+.footer-social-links li {
+    margin-left: 20px;
+}
+
+.footer-social-links a {
+    color: #FFA500; /* Gold color matching the theme */
+    text-decoration: none;
+}
+
+.footer-social-links a:hover {
+    text-decoration: underline;
+}
 
 
  /* ____  __  __ _____ ____ ___    _      ____  _____ ____  ____   ___  _   _ ____ _____     _______ _   _ _____ ____ ____  
@@ -567,4 +667,26 @@ ____                  _                 ____            _   _
         font-size: 2rem;
     }
 
+}
+
+/* Responsive adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+    .footer-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-social-links {
+        margin-top: 15px;
+    }
+
+    .footer-social-links li {
+        margin-left: 0;
+        margin-right: 10px;
+    }
 }
