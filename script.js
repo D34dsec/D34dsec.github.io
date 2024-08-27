@@ -40,6 +40,12 @@ document.addEventListener("scroll", function() {
   });
 });
 
+document.getElementById('accept-cookies').onclick = function() {
+  document.getElementById('cookie-banner').style.display = 'none';
+  // Set a cookie to remember the user's choice
+  document.cookie = "cookiesAccepted=true; max-age=" + 60*60*24*365;
+};
+
 
 function scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });

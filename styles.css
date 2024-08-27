@@ -670,6 +670,38 @@ ____            _             _     _   _       ____
     background-color: #ff8c00;
 }
 
+/* 
+____            _    _        ____                              
+/ ___|___   ___ | | _(_) ___  | __ )  __ _ _ __  _ __   ___ _ __ 
+| |   / _ \ / _ \| |/ / |/ _ \ |  _ \ / _` | '_ \| '_ \ / _ \ '__|
+| |__| (_) | (_) |   <| |  __/ | |_) | (_| | | | | | | |  __/ |   
+\____\___/ \___/|_|\_\_|\___| |____/ \__,_|_| |_|_| |_|\___|_|   
+                                                                  */
+
+#cookie-banner {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    z-index: 1000;
+}
+#cookie-banner p {
+    margin: 0;
+    display: inline-block;
+    margin-right: 10px;
+}
+#cookie-banner button {
+    background-color: #ff5e57;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
 
  /* ____  __  __ _____ ____ ___    _      ____  _____ ____  ____   ___  _   _ ____ _____     _______ _   _ _____ ____ ____  
    / __ \|  \/  | ____|  _ \_ _|  / \    |  _ \| ____/ ___||  _ \ / _ \| \ | / ___|_ _\ \   / / ____| \ | | ____/ ___/ ___| 
