@@ -40,11 +40,25 @@ document.addEventListener("scroll", function() {
   });
 });
 
-document.getElementById('accept-cookies').onclick = function() {
-  document.getElementById('cookie-banner').style.display = 'none';
-  // Set a cookie to remember the user's choice
-  document.cookie = "cookiesAccepted=true; max-age=" + 60*60*24*365;
-};
+document.addEventListener("DOMContentLoaded", function() {
+  // Function to check if the 'cookiesAccepted' cookie exists
+  function getCookie(name) {
+      let value = "; " + document.cookie;
+      let parts = value.split("; " + name + "=");
+      if (parts.length === 2) return parts.pop().split(";").shift();
+  }
+
+  // Check if the user has already accepted cookies
+  if (!getCookie('cookiesAccepted')) {
+      document.getElementById('cookie-banner').style.display = 'block';
+  }
+
+  document.getElementById('accept-cookies').onclick = function() {
+      document.getElementById('cookie-banner').style.display = 'none';
+      // Set a cookie to remember the user's choice for 1 year
+      document.cookie = "cookiesAccepted=true; max-age=" + 60*60*24*365 + "; path=/";
+  };
+});
 
 
 function scrollToTop() {
